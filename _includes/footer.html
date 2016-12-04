@@ -1,0 +1,42 @@
+<ul class="social">
+    <li class="social-item">
+        <a href="{% if site.linkedin %}https://br.linkedin.com/in/{{ site.linkedin }}{% endif %}" class="social-link linkedin" data-tooltip="Linkedin profile">
+            <span>Linkedin profile</span>
+        </a>
+    </li>
+    <li class="social-item">
+        <a href="{% if site.github %}https://github.com/{{ site.github }}{% endif %}" class="social-link github" data-tooltip="Github profile">
+            <span>Github profile</span>
+        </a>
+    </li>
+    <li class="social-item">
+        <a href="{% if site.twitter %}https://twitter.com/{{ site.twitter }}{% endif %}" class="social-link twitter" data-tooltip="Twitter profile">
+            <span>Twitter profile</span>
+        </a>
+    </li>
+    <li class="social-item">
+        <a href="{% if site.cv %}{{ site.cv }}{% endif %}" class="social-link curriculum" data-tooltip="My resumé">
+            <span>My resumé</span>
+        </a>
+    </li>
+    <li class="social-item">
+        <a href="{% if site.mail %}mailto:{{ site.mail }}{% endif %}" class="social-link mail" data-tooltip="Send me an e-mail">
+            <span>Send me an e-mail</span>
+        </a>
+    </li>
+    <li class="social-item">
+        <a href="{% if site.feed %}{{ site.feed | prepend: site.url }}{% endif %}" class="social-link rss" data-tooltip="Feed RSS">
+            <span>Feed RSS</span>
+        </a>
+    </li>
+    <!-- <li class="social-item">
+        <a href="#" class="social-link gplus" data-tooltip="Google Plus profile">
+        <span>Google Plus profile</span>
+        </a>
+    </li>
+    <li class="social-item">
+        <a href="#" class="social-link facebook" data-tooltip="Facebook profile">
+        <span>Facebook profile</span>
+        </a>
+    </li> -->
+</ul>

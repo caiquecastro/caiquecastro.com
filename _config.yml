@@ -1,0 +1,25 @@
+# Site settings
+title: Caíque Castro
+email: castro.caique@gmail.com
+description: >
+  I will relate on this blog my experiences on the
+  development skills
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://www.caiquecastro.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: caiquecastro_
+github_username:  caiquecastro
+linkedin_username: "caiquecastro"
+stackoverflow_username: "2958728"
+feed_url: "/feed"
+cv_path: "/files/cv-caique.pdf"
+
+# Build settings
+markdown: kramdown
+theme: minima
+sass:
+  style: compressed
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,21 @@
+---
+layout: default
+permalink: /
+---
+<div class="intro">
+  <h3 class="welcome-message">
+    Hi, my name is Caique
+  </h3>
+  <p class="welcome-description">
+  	I like to make software
+  </p>
+</div>
+<div class="wrapper">
+  <h2>Últimos Posts</h2>
+  <ul class="latest-posts">
+  {% for post in site.posts %}
+    {% assign author = site.data.people[post.author] %}
+      <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+  {% endfor %}
+  </ul>
+</div>

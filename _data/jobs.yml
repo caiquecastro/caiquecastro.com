@@ -1,0 +1,20 @@
+- title: AlphaDengue
+  description: "Web system developed for the controlling of epidemic diseases e.g. dengue fever"
+  backend: "Laravel (PHP) and Java"
+  frontend: "HTML5, CSS3, JavaScript"
+  link: "#"
+  image: /files/jobs/alphadengue.png
+
+- title: CaiqueCastro.com
+  description: "Web site to display my portfolio and share my ideas through my blog"
+  backend: "Jekyll"
+  frontend: "HTML5, CSS3 (Scss), JavaScript"
+  link: "https://www.caiquecastro.com"
+  image: /files/jobs/caiquecastro.png
+
+- title: Real MTB
+  description: "Website for mountain biking competition"
+  backend: "Wordpress"
+  frontend: "HTML5, CSS3 (Scss), JavaScript"
+  link: "https://realmtb.com.br"
+  image: /files/jobs/realmtb.png

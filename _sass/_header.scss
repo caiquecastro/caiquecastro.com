@@ -1,0 +1,52 @@
+.header {
+  flex: none;
+  margin: 0.5%;
+}
+
+.heading-wrapper {
+  @include user-select;
+
+  text-align: center;
+}
+
+.website-title,
+.website-subtitle {
+  margin: 0;
+  font-weight: bold;
+}
+
+.website-title {
+  font-size: 1.5rem;
+}
+
+.website-subtitle {
+  font-size: 0.84rem;
+}
+
+@media screen and (min-width: $mobile) {
+  .header {
+    @include flexbox;
+    justify-content: space-between;
+  }
+  .home .header {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .header {
+    margin: 1% 0;
+  }
+  .heading-wrapper {
+    margin-bottom: 1%;
+  }
+  .navigation {
+    position: relative;
+    width: 90%;
+    margin: auto;
+  }
+  .menu {
+    position: absolute;
+    width: 100%;
+  }
+}

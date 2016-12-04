@@ -1,0 +1,27 @@
+---
+layout: page
+title: Blog
+permalink: blog/
+---
+
+<h1>Blog</h1>
+
+{% for post in site.posts %}
+  {% assign author = site.data.people[post.author] %}
+  <article class="post">
+    <header class="post-header">
+      <h2 class="post-title">
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+          {{ post.title }}
+        </a>
+      </h2>
+      <p class="post-meta">
+        Published on {{ post.date | date: "%B %d, %Y" }}
+        {% if post.author %} by {{ author.name }} {% endif %}
+      </p>
+    </header>
+    <p class="post-excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+  </article>
+{% endfor %}
+
+<p class="rss-subscribe">subscribe <a href="{{ "/feed/" | prepend: site.baseurl }}">via RSS</a></p>
