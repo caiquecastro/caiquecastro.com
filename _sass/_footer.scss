@@ -4,9 +4,12 @@
   list-style: none;
   text-align: center;
 }
+
 .social-item {
   display: inline-block;
+  position: relative;
 }
+
 .social-link {
   display: block;
   margin: 10px;
@@ -20,26 +23,31 @@
 
   background-image: url("/images/sprite.png");
 }
+
 .social-link:hover {
   opacity: 1;
 }
+
 .social-link span {
   display: none;
 }
+
 .social-link:after,
 .social-link:before {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
+
 .social-link:hover:after,
 .social-link:hover:before {
   opacity: 1;
   visibility: visible;
 }
+
 .social-link:before {
   position: absolute;
-  bottom: 120%;
+  bottom: 100%;
   left: 50%;
   margin-bottom: 5px;
   margin-left: -80px;
@@ -53,6 +61,7 @@
   text-align: center;
   font-size: 14px;
 }
+
 .social-link:after {
   position: absolute;
   bottom: 120%;
@@ -68,27 +77,26 @@
   line-height: 0;
 }
 
-.facebook {
-  //background-image: url('/assets/icons/facebook.png');
-}
 .twitter {
   background-position: -4px -3508px;
 }
+
 .linkedin {
   background-position: -4px -1924px;
 }
-.gplus {
-  //background-image: url('/assets/icons/googleplus-revised.png');
-}
+
 .curriculum {
   background-position: -4px -388px;
 }
+
 .github {
   background-position: -4px -1252px;
 }
+
 .mail {
   background-position: -4px -772px;
 }
+
 .rss {
   background-position: -4px -2788px;
 }
