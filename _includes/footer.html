@@ -1,42 +1,50 @@
 <ul class="social">
     <li class="social-item">
-        <a href="{% if site.linkedin %}https://br.linkedin.com/in/{{ site.linkedin }}{% endif %}" class="social-link linkedin" data-tooltip="Linkedin profile">
+        <a href="{% if site.linkedin_username %}https://br.linkedin.com/in/{{ site.linkedin_username }}{% endif %}"
+           class="social-link linkedin"
+           data-tooltip="Linkedin profile"
+        >
             <span>Linkedin profile</span>
         </a>
     </li>
     <li class="social-item">
-        <a href="{% if site.github %}https://github.com/{{ site.github }}{% endif %}" class="social-link github" data-tooltip="Github profile">
+        <a href="{% if site.github_username %}https://github.com/{{ site.github_username }}{% endif %}"
+           class="social-link github"
+           data-tooltip="Github profile"
+        >
             <span>Github profile</span>
         </a>
     </li>
     <li class="social-item">
-        <a href="{% if site.twitter %}https://twitter.com/{{ site.twitter }}{% endif %}" class="social-link twitter" data-tooltip="Twitter profile">
+        <a href="{% if site.twitter_username %}https://twitter.com/{{ site.twitter_username }}{% endif %}"
+           class="social-link twitter"
+           data-tooltip="Twitter profile"
+        >
             <span>Twitter profile</span>
         </a>
     </li>
     <li class="social-item">
-        <a href="{% if site.cv %}{{ site.cv }}{% endif %}" class="social-link curriculum" data-tooltip="My resumé">
+        <a href="{% if site.cv_path %}{{ site.cv_path }}{% endif %}"
+           class="social-link curriculum"
+           data-tooltip="My resumé"
+        >
             <span>My resumé</span>
         </a>
     </li>
     <li class="social-item">
-        <a href="{% if site.mail %}mailto:{{ site.mail }}{% endif %}" class="social-link mail" data-tooltip="Send me an e-mail">
+        <a href="{% if site.email %}mailto:{{ site.email }}{% endif %}"
+           class="social-link mail"
+           data-tooltip="Send me an e-mail"
+        >
             <span>Send me an e-mail</span>
         </a>
     </li>
     <li class="social-item">
-        <a href="{% if site.feed %}{{ site.feed | prepend: site.url }}{% endif %}" class="social-link rss" data-tooltip="Feed RSS">
+        <a href="{% if site.feed_url %}{{ site.feed_url | prepend: site.url }}{% endif %}"
+           class="social-link rss"
+           data-tooltip="Feed RSS"
+        >
             <span>Feed RSS</span>
         </a>
     </li>
-    <!-- <li class="social-item">
-        <a href="#" class="social-link gplus" data-tooltip="Google Plus profile">
-        <span>Google Plus profile</span>
-        </a>
-    </li>
-    <li class="social-item">
-        <a href="#" class="social-link facebook" data-tooltip="Facebook profile">
-        <span>Facebook profile</span>
-        </a>
-    </li> -->
 </ul>
