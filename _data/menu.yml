@@ -6,6 +6,6 @@ navigation:
 - text: Jobs
   url: /jobs
 - text: Blog
-  url: /blog/
+  url: /blog
 - text: Contact
-  url: /contact/
+  url: /contact
