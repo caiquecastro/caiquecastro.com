@@ -3,8 +3,6 @@ navigation:
   url: /
 - text: About Me
   url: /about
-- text: Jobs
-  url: /jobs
 - text: Blog
   url: /blog
 - text: Contact
