@@ -3,6 +3,7 @@ layout: post
 title: "Quick tips I - Terminal"
 tags: quick-tips, terminal, workflow
 date: 2016-04-22
+language: en
 ---
 
 Hello everyone, I'm back to share with you some quick tips for terminal that helps

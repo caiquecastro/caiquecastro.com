@@ -3,6 +3,7 @@ layout: post
 title: "Dockerized commands - Part 2"
 tags: docker, virtualization
 date: 2017-12-24
+language: en
 ---
 
 On the last post ({% post_url 2017-12-16-dockerized-commands %}), we learned

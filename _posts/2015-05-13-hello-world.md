@@ -3,6 +3,7 @@ layout: post
 title: "Hello World"
 tags: hello world, first post
 date: 2015-05-13
+language: en
 ---
 
 Hey guys, I decided to start writing my posts in English in order to improve my skills. I like to learn technological stuff.

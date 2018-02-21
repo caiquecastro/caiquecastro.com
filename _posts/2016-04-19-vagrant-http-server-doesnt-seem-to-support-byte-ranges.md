@@ -3,6 +3,7 @@ layout: post
 title: "Vagrant Error - Http server doesn\'t seem to support byte ranges"
 tags: vagrant, error, box, failed upgrade
 date: 2016-04-19
+language: en
 ---
 
 Hey guys, I'm back to share with you a solution for an error that occured to me

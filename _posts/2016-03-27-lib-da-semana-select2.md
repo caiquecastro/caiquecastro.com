@@ -3,6 +3,7 @@ layout: post
 title: "Lib da Semana - Select2"
 tags: javascript, library, jquery, select2
 date: 2016-03-27
+language: pt-BR
 ---
 
 Essa semana começarei uma série de artigos apresentando bibliotecas e frameworks

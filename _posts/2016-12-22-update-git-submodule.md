@@ -3,6 +3,7 @@ layout: post
 title: "Updating git submodule"
 tags: git, submodule, update
 date: 2016-12-22
+language: en
 ---
 
 Today, after 8 months of inactivity, I'm writing a new blog post. Today I'm going to share a quick but very useful command snippet.

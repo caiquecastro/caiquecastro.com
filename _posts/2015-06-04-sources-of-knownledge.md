@@ -3,6 +3,7 @@ layout: post
 title: "My Sources of Knownledge"
 tags: source, knowledge, docs
 date: 2015-06-04
+language: en
 ---
 
 Hey guys, today I'm going to write about my sources of knownledge. I like to read many articles related to development daily. I follow many blogs and I'm subscribed in many newsletters and I also follow interesting profiles in Twitter.
