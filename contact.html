@@ -6,16 +6,16 @@ permalink: /contact
 
 <h1>Contact</h1>
 
-<form action="/contact/">
+<form method="POST" action="/contact/success" netlify>
   <fieldset>
     <label for="name">Name</label>
-    <input id="name" type="text">
+    <input id="name" type="text" name="name">
     <label for="email">E-mail</label>
-    <input id="email" type="email">
+    <input id="email" type="email" name="email">
     <label for="phone">Phone</label>
-    <input id="phone" type="tel">
+    <input id="phone" type="tel" name="phone">
     <label for="message">Message</label>
-    <textarea id="message" rows="5"></textarea>
+    <textarea id="message" rows="5" name="message"></textarea>
     <button type="submit" class="btn btn-submit">Send</button>
   </fieldset>
 </form>
