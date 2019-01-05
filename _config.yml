@@ -5,7 +5,7 @@ description: >
   I will relate on this blog my experiences on the
   development skills
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.caiquecastro.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.caiquecastro.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: caiquecastro_
 github_username:  caiquecastro
 linkedin_username: "caiquecastro"
