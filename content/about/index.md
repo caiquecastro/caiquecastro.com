@@ -18,17 +18,17 @@ I'm a full stack developer at [Venturus](https://venturus.org.br). My interests 
 * Monitoring: Nagios, Grafana
 * Version Control: Git, SVN
 * Virtualization: VirtualBox, Vagrant, Docker, Kubernetes
-* Web servers: Apache, Nginx
+* Web servers: Nginx, Apache
 * HTTP Requests / REST
-* Programming language: PHP, Javascript (Node.js), Ruby (Ruby on Rails), Java (Spring), C#, C, C++
+* Programming language: Javascript (Node.js), PHP, Python, Ruby (Ruby on Rails), Java (Spring), C#, C, C++
 * Database: MySQL, PostgreSQL, Oracle, MsSQL Server, MongoDB, Cassandra, Redis, SQL
-* HTML / HTML5: Semantic web
+* HTML / CSS (Sass, PostCSS): Front-end development
 * CSS / CSS3: LESS, SASS, Media Queries
-* JavaScript Libraries: React.JS, Vue.js, Angular, JQuery, etc.
-* PHP Frameworks and CMS: Laravel, CakePHP, WordPress, Joomla
+* JavaScript Libraries: React.JS, Vue.js, Angular, etc.
+* PHP Frameworks: Laravel, Symfony, Zend (Laminas) WordPress
 * Responsive design
 * JSON, XML, WebSocket
-* Mobile Development: Android, Windows Phone, iOS
+* Mobile Development: React Native, Expo, Flutter, Android, iOS
 * Project Development: Agile, TDD, BDD, DDD, XP, Scrum
 
 
@@ -36,6 +36,6 @@ My hobbies are:
 
 
 * Learning new technologies
-* Tennis
+* Playing Tennis
 * Rubik's cube
-* Watch soccer (my favorite soccer team: Corinthians)
+* Watching Netflix
