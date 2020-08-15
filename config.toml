@@ -1,4 +1,4 @@
-baseURL = "http://caiquecastro.com/"
+baseURL = "/" # https://www.caiquecastro.com
 languageCode = "en-us"
 title = "Caique de Castro"
 theme = "hugo-theme-codex"
