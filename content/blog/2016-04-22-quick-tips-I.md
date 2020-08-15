@@ -1,8 +1,7 @@
 ---
-layout: post
 title: "Quick tips I - Terminal"
-tags: quick-tips, terminal, workflow
 date: 2016-04-22
+tags: [quick-tips, terminal, workflow]
 language: en
 ---
 

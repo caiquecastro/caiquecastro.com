@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "Dockerized commands"
-tags: docker, virtualization
+tags: ["docker", "virtualization"]
 date: 2017-12-16
 language: en
 ---

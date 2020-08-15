@@ -1,8 +1,7 @@
 ---
-layout: post
 title: "Lib da Semana - Select2"
-tags: javascript, library, jquery, select2
 date: 2016-03-27
+tags: [javascript, library, jquery, select2]
 language: pt-BR
 ---
 

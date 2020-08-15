@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "Instalando deno com proxy no Windows"
-tags: deno, proxy, windows
+tags: ["deno", "proxy", "windows"]
 date: 2020-05-18
 language: pt
 ---

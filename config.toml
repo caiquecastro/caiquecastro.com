@@ -1,4 +1,44 @@
 baseURL = "http://caiquecastro.com/"
 languageCode = "en-us"
 title = "Caique de Castro"
-theme = "anubis"
+theme = "hugo-theme-codex"
+copyright = "© {year}"
+
+[params]
+  dateFormat = "Jan 2 2006"
+
+  twitter = "https://twitter.com/caiquecastro_"
+  github = "https://github.com/caiquecastro"
+  gitlab = "https://gitlab.com/caiquecastro"
+  linkedin = "https://www.linkedin.com/in/caiquecastro/"
+
+  showPageTitleInTOC = false
+
+[markup]
+  [markup.highlight]
+    codeFences = false
+
+  # Set to false to disallow raw HTML in markdown files
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[[menu.main]]
+  identifier = "home"
+  name = "Home"
+  title = "Home page"
+  url = "/"
+  weight = 1.0
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  title = "About page"
+  url = "/about"
+  weight = 2.0
+
+[[menu.main]]
+  identifier = "blog"
+  name = "Blog"
+  title = "Blog index"
+  url = "/blog"
+  weight = 3.0

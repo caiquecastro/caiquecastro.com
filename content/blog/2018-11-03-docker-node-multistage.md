@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "Building multi stage docker image for node app"
-tags: docker, node
+tags: ["docker", "node"]
 date: 2018-11-03
 language: en
 ---

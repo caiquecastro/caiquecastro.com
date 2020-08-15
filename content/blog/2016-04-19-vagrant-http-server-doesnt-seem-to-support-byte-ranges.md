@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "Vagrant Error - Http server doesn\'t seem to support byte ranges"
-tags: vagrant, error, box, failed upgrade
+tags: ["vagrant", "error", "box", "failed", "upgrade"]
 date: 2016-04-19
 language: en
 ---
