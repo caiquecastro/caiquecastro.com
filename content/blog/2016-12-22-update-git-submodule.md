@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "Updating git submodule"
-tags: git, submodule, update
+tags: ["git", "submodule", "update"]
 date: 2016-12-22
 language: en
 ---

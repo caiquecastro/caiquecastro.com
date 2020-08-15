@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "Hello World"
-tags: hello world, first post
+tags: ["hello world", "first post"]
 date: 2015-05-13
 language: en
 ---

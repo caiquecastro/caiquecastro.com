@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "My Sources of Knownledge"
-tags: source, knowledge, docs
+tags: ["source", "knowledge", "docs"]
 date: 2015-06-04
 language: en
 ---

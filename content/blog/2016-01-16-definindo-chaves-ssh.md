@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "Definindo chaves SSH"
-tags: ssh, servidor, remoto
+tags: ["ssh", "servidor", "remoto"]
 date: 2016-01-16
 language: pt-BR
 ---
