@@ -35,14 +35,14 @@ contendo módulos adicionais) na sua página html.
 
 * Utilizando CDN: A biblioteca é disponibilizada nas CDN
 [cdnjs](https://cdnjs.com/libraries/select2) e
-[jsDeliver](http://www.jsdelivr.com/projects/select2). Inclua os links no seu
+[jsDeliver](https://www.jsdelivr.com/projects/select2). Inclua os links no seu
 HTML.
 
 Exemplo:
 
 {% highlight html %}
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
-<script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
 {% endhighlight %}
 
 * Via NPM:
