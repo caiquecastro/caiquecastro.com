@@ -37,8 +37,15 @@ copyright = "© {year}"
   weight = 2.0
 
 [[menu.main]]
+  identifier = "uses"
+  name = "Uses"
+  title = "My setup"
+  url = "/uses"
+  weight = 3.0
+
+[[menu.main]]
   identifier = "blog"
   name = "Blog"
   title = "Blog index"
   url = "/blog"
-  weight = 3.0
+  weight = 4.0
