@@ -1,7 +1,7 @@
 jekyll:
-  image: jekyll/jekyll:latest
-  command: jekyll serve --watch --incremental
+  image: peaceiris/hugo
+  command: serve --bind 0.0.0.0
   ports:
-    - 4000:4000
+    - 1313:1313
   volumes:
-    - .:/srv/jekyll
+    - .:/src

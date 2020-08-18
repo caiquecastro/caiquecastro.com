@@ -1,7 +1,5 @@
 ---
-layout: page
 title: About
-permalink: /about
 ---
 
 Hello, my name is Caique de Castro. I'm 26 and I studied Computer Engineering at University of Taubaté (UNITAU).
