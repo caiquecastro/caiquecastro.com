@@ -2,7 +2,7 @@
 title: Uses
 ---
 
-This page contains my current setup
+This page contains my current setup. It's inspired on [https://uses.tech/](https://uses.tech/)
 
 ## Personal
 
