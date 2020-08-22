@@ -18,5 +18,5 @@ docker run --rm -it \
   peaceiris/hugo serve --bind 0.0.0.0
 ```
 
-O deploy é feito no Netilify e todo o código fonte pode ser encontrado no repositório
-do meu perfil no Github.
+O deploy é feito no [Netlify](https://www.netlify.com/) e todo o código fonte pode
+ser encontrado no repositório do meu perfil no Github.
