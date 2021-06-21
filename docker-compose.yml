@@ -1,7 +1,9 @@
-hugo:
-  image: peaceiris/hugo:v0.80.0
-  command: serve --bind 0.0.0.0
-  ports:
-    - 1313:1313
-  volumes:
-    - .:/src
+version: "3.8"
+services:
+  hugo:
+    image: peaceiris/hugo:v0.82.1-full
+    command: serve --bind 0.0.0.0
+    ports:
+      - 1313:1313
+    volumes:
+      - .:/src
