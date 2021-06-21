@@ -31,9 +31,10 @@ I'm a full stack developer at [Venturus](https://venturus.org.br). My interests 
 
 ### Ops
 
-* Docker
-* Kubernetes
-* Nomad
+* [Docker](https://www.docker.com/)
+* [Podman](https://podman.io/)
+* [Kubernetes](https://kubernetes.io/)
+* [Nomad](https://www.nomadproject.io/)
 * Ansible
 * VirtualBox
 * Vagrant
