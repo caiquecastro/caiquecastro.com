@@ -33,19 +33,19 @@ copyright = "© {year}"
   identifier = "about"
   name = "About"
   title = "About page"
-  url = "/about"
+  url = "/about/"
   weight = 2.0
 
 [[menu.main]]
   identifier = "uses"
   name = "Uses"
   title = "My setup"
-  url = "/uses"
+  url = "/uses/"
   weight = 3.0
 
 [[menu.main]]
   identifier = "blog"
   name = "Blog"
   title = "Blog index"
-  url = "/blog"
+  url = "/blog/"
   weight = 4.0
