@@ -5,7 +5,7 @@ theme = "hugo-theme-codex"
 copyright = "© {year}"
 
 [params]
-  dateFormat = "Jan 2 2006"
+  dateFormat = "Jun 21 2021"
 
   twitter = "https://twitter.com/caiquecastro_"
   github = "https://github.com/caiquecastro"
