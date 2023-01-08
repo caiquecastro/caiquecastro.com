@@ -8,11 +8,11 @@ This page contains my current setup. It's inspired on [https://uses.tech/](https
 
 ### Hardware
 
-- Dell Inspiron
+- [Macbook Pro M1 Pro](https://www.apple.com/br/macbook-pro-14-and-16/specs/)
 
 ### OS
 
-- [Manjaro](https://manjaro.org/)
+- [macOS Ventura](https://www.apple.com/br/macos/ventura/)
 
 
 ### Editors and Terminals
@@ -20,6 +20,7 @@ This page contains my current setup. It's inspired on [https://uses.tech/](https
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [ZSH](https://www.zsh.org/)
 - [Oh my zsh](https://ohmyz.sh/)
+- [iTerm2](https://iterm2.com/)
 
 
 ## Work
@@ -30,14 +31,12 @@ This page contains my current setup. It's inspired on [https://uses.tech/](https
 
 ### OS
 
-- [Microsoft Windows 10](https://www.microsoft.com/pt-br/windows/)
-- [WSL2](https://docs.microsoft.com/pt-br/windows/wsl/wsl2-index)
+- [Ubuntu](https://ubuntu.com/)
 
 
 ### Editors and Terminals
 
 - [Visual Studio Code](https://code.visualstudio.com/)
-- [Windows Terminal](https://github.com/microsoft/terminal)
 
 
 ## Personal & Work
