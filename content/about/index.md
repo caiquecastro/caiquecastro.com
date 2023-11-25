@@ -6,7 +6,7 @@ Hello, my name is Caique de Castro. I'm 26 and I studied Computer Engineering at
 I am based in Taubaté, SP, Brazil. I started my studies in programming at the age of 12, with Web Development,
 with HTML, CSS, Javascript, PHP. At that time I used to code on Dreamweaver and make some animations on Flash.
 
-I'm a full stack developer at [Venturus](https://venturus.org.br). My interests are:
+I'm a senior software engineer. My interests are:
 
 ### Frontend
 

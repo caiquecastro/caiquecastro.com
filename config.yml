@@ -7,7 +7,7 @@ copyright: "© 2021"
 params:
   homeInfoParams:
     Title: Hi there
-    Content: Software Engineer @ Venturus
+    Content: Senior Software Engineer
 
   socialIcons:
     - name: twitter
