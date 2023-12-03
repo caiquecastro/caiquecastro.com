@@ -23,7 +23,7 @@ I'm a senior software engineer. My interests are:
 ### Backend
 
 * Node.js (Nest.js, Koa, Express)
-* PHP (Laravel, Symfony, Zend (Laminas) WordPress)
+* PHP (Laravel, Symfony, Laminas and Wordpress)
 * Python (FastAPI, Django, Flask)
 * Relational Databases: Postgres, MySQL, SQLServer, Oracle
 * NoSQL Databases: MongoDB, Redis, Elasticsearch
