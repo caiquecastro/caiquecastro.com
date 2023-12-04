@@ -15,7 +15,7 @@ I'm a senior software engineer. My interests are:
 * CSS / Scss / PostCSS / Responsive Design
 * PWA
 * SEO
-* [React](https://pt-br.reactjs.org/)
+* [React](https://pt-br.react.dev/)
 * [Vue.js 2.x/3.x](https://vuejs.org/)
 * [Angular](https://angular.io/)
 
