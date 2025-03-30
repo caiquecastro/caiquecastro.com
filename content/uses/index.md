@@ -23,6 +23,11 @@ This page contains my current setup. It's inspired on [https://uses.tech/](https
 - [iTerm2](https://iterm2.com/)
 
 
+### Tools
+
+- [DBeaver](https://dbeaver.io/)
+
+
 ## Work
 
 ### Hardware
