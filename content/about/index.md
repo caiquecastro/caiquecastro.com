@@ -2,7 +2,7 @@
 title: About
 ---
 
-Hello, my name is Caique de Castro. I'm 29 and I have a degree in Computer Engineering at University of Taubaté (UNITAU)
+Hello, my name is Caique de Castro. I'm 30 and I have a degree in Computer Engineering at University of Taubaté (UNITAU)
 and a MBA on Soluctions Architect at FIAP. I am based in Taubaté, SP, Brazil. I started my studies in programming at
 the age of 12, with Web Development, with HTML, CSS, Javascript, PHP. At that time I used to code on Dreamweaver
 and make some animations on Flash.
