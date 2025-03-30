@@ -27,16 +27,17 @@ This page contains my current setup. It's inspired on [https://uses.tech/](https
 
 ### Hardware
 
-- Dell
+- [MacBook Pro Apple M3 Pro](https://www.apple.com/br/macbook-pro/specs/)
 
 ### OS
 
-- [Ubuntu](https://ubuntu.com/)
+- [MacOS Sonoma 14.4](https://www.apple.com/br/macos)
 
 
 ### Editors and Terminals
 
 - [Visual Studio Code](https://code.visualstudio.com/)
+- [Cursor](https://www.cursor.com/en)
 
 
 ## Personal & Work
@@ -44,6 +45,9 @@ This page contains my current setup. It's inspired on [https://uses.tech/](https
 ### Hardware
 
 - [LG 25UM58](https://www.lg.com/br/business/monitores-produtos/lg-25UM58)
+- [ARZOPA 16.1'' 144Hz Portable](https://www.arzopa.com/products/z1fc-16-1-fhd-144hz-portable-monitor?srsltid=AfmBOoogMXmVT0U6kj_tT-6gfvDbKPpvtCjv-rm6mmBurpA-QDKy7Y1Q) 
+- [IPad Air](https://www.apple.com/ipad-air/)
+- [IPhone 15](https://www.apple.com/iphone/)
 
 ### Browser
 
