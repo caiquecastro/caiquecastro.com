@@ -24,8 +24,8 @@ I'm a senior software engineer. My interests are:
 ### Backend
 
 * Node.js (Nest.js, ExpressoTS, Koa, Express)
-* PHP (Laravel, Symfony, Laminas and Wordpress)
 * Python (FastAPI, Django, Flask)
+* PHP (Laravel, Symfony, Laminas and Wordpress)
 * Relational Databases: Postgres, MySQL, SQLServer, Oracle
 * NoSQL Databases: MongoDB, Redis, Elasticsearch
 
@@ -37,10 +37,7 @@ I'm a senior software engineer. My interests are:
 * [Kubernetes](https://kubernetes.io/)
 * [Nomad](https://www.nomadproject.io/)
 * Ansible
-* VirtualBox
-* Vagrant
 * Grafana
-* Nagios
 * Amazon AWS
 * Google Cloud (GCP)
 * Azure
