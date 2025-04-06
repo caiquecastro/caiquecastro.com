@@ -44,6 +44,8 @@ I'm a senior software engineer. My interests are:
 * Heroku
 * DigitalOcean
 * Shell / Bash Scripts
+* Datadog
+* Sentry
 
 ### Mobile
 
