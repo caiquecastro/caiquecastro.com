@@ -52,7 +52,7 @@ This page contains my current setup. It's inspired on [https://uses.tech/](https
 - [LG 25UM58](https://www.lg.com/br/business/monitores-produtos/lg-25UM58)
 - [ARZOPA 16.1'' 144Hz Portable](https://www.arzopa.com/products/z1fc-16-1-fhd-144hz-portable-monitor?srsltid=AfmBOoogMXmVT0U6kj_tT-6gfvDbKPpvtCjv-rm6mmBurpA-QDKy7Y1Q) 
 - [IPad Air](https://www.apple.com/ipad-air/)
-- [IPhone 15](https://www.apple.com/iphone/)
+- [IPhone 16 Pro](https://www.apple.com/iphone/)
 
 ### Browser
 
