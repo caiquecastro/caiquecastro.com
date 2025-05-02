@@ -39,12 +39,6 @@ This page contains my current setup. It's inspired on [https://uses.tech/](https
 - [MacOS Sonoma 14.4](https://www.apple.com/br/macos)
 
 
-### Editors and Terminals
-
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Cursor](https://www.cursor.com/en)
-
-
 ## Personal & Work
 
 ### Hardware
@@ -58,3 +52,8 @@ This page contains my current setup. It's inspired on [https://uses.tech/](https
 
 - [Google Chrome](https://www.google.com/intl/pt-BR/chrome/)
 - [Mozilla Firefox](https://www.mozilla.org/pt-BR/firefox/new/)
+
+### Editors and Terminals
+
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Cursor](https://www.cursor.com/en)
