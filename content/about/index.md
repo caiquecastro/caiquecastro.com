@@ -49,7 +49,7 @@ I'm a senior software engineer. My interests are:
 
 ### Mobile
 
-* React Navtive
+* React Native
 * Expo
 * Flutter
 
