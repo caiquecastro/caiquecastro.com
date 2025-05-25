@@ -61,15 +61,6 @@ I'm a senior software engineer. My interests are:
 * ESP32
 
 
-### Methodologies
-
-* Scrum
-* Kanban
-* TDD
-* BDD
-* DDD
-
-
 ### Hobies
 
 My hobbies are:
