@@ -54,6 +54,7 @@ This page contains my current setup. It's inspired on [https://uses.tech/](https
 
 - [Google Chrome](https://www.google.com/intl/pt-BR/chrome/)
 - [Mozilla Firefox](https://www.mozilla.org/pt-BR/firefox/new/)
+- [Safari](https://www.apple.com/safari/)
 
 ### Editors and Terminals
 
