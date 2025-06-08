@@ -47,6 +47,8 @@ This page contains my current setup. It's inspired on [https://uses.tech/](https
 - [ARZOPA 16.1'' 144Hz Portable](https://www.arzopa.com/products/z1fc-16-1-fhd-144hz-portable-monitor?srsltid=AfmBOoogMXmVT0U6kj_tT-6gfvDbKPpvtCjv-rm6mmBurpA-QDKy7Y1Q) 
 - [IPad Air](https://www.apple.com/ipad-air/)
 - [IPhone 16 Pro](https://www.apple.com/iphone/)
+- [MX Master 3](https://www.logitech.com/en-us/products/mice/mx-master-3s.910-006556.html)
+- [MX Keys](https://www.logitech.com/en-us/shop/p/mx-keys-s.920-011406)
 - [AirPods Max](https://www.apple.com/br/airpods-max/)
 - [AirPods Pro 2](https://www.apple.com/br/airpods-pro/)
 
