@@ -13,12 +13,13 @@ I'm a senior software engineer. My interests are:
 
 * HTML
 * JS
-* CSS / Scss / PostCSS / Responsive Design
+* CSS
 * PWA
-* SEO
 * [React](https://pt-br.react.dev/)
+* [Next.js](https://nextjs.org/)
 * [Vue.js 2.x/3.x](https://vuejs.org/)
-* [Angular](https://angular.io/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [Shadcn UI](https://ui.shadcn.com/)
 
 
 ### Backend
