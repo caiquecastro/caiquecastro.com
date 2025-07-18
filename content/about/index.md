@@ -33,20 +33,20 @@ I'm a senior software engineer. My interests are:
 
 ### Ops
 
+* Shell / Bash Scripts
 * [Docker](https://www.docker.com/)
 * [Podman](https://podman.io/)
 * [Kubernetes](https://kubernetes.io/)
 * [Nomad](https://www.nomadproject.io/)
-* Ansible
-* Grafana
-* Amazon AWS
-* Google Cloud (GCP)
-* Azure
-* Heroku
-* DigitalOcean
-* Shell / Bash Scripts
-* Datadog
-* Sentry
+* [Ansible](https://www.ansible.com/)
+* [Grafana](https://grafana.com/)
+* [Amazon AWS](https://aws.amazon.com/)
+* [Google Cloud](https://cloud.google.com/)
+* [Azure](https://azure.microsoft.com/)
+* [Heroku](https://www.heroku.com/)
+* [DigitalOcean](https://www.digitalocean.com/)
+* [Datadog](https://www.datadoghq.com/)
+* [Sentry](https://sentry.io/)
 
 ### Mobile
 
