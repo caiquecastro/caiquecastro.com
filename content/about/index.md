@@ -48,12 +48,6 @@ I'm a senior software engineer. My interests are:
 * [Datadog](https://www.datadoghq.com/)
 * [Sentry](https://sentry.io/)
 
-### Mobile
-
-* React Native
-* Expo
-* Flutter
-
 
 ### IOT
 
