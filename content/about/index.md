@@ -11,7 +11,7 @@ I'm a senior software engineer. My interests are:
 
 ### Frontend
 
-* HTML
+* [HTML](http://developer.mozilla.org/en-US/docs/Web/HTML)
 * JS
 * CSS
 * PWA
