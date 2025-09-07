@@ -2,12 +2,15 @@
 title: About
 ---
 
-Hello, my name is Caique de Castro. I'm 30 and I have a degree in Computer Engineering at University of Taubaté (UNITAU)
-and a MBA on Soluctions Architect at FIAP. I am based in Taubaté, SP, Brazil. I started my studies in programming at
-the age of 12, with Web Development, with HTML, CSS, Javascript, PHP. At that time I used to code on Dreamweaver
-and make some animations on Flash.
+Hello, my name is Caique de Castro. I'm 31 and I hold a degree in Computer Engineering from the University of Taubaté
+(UNITAU) and an MBA in Soluctions Architect from FIAP. Based in Taubaté, SP, Brazil, I work as a senior software engineer.
 
-I'm a senior software engineer. My interests are:
+My journey in programming began at the age of 12, when I started building websites with HTML, CSS, JavaScript, and PHP.
+Back then, I coded in Dreamweaver and experimented with Flash animations—early experiences that sparked my passion
+for technology and problem-solving.
+
+Today, I focus on designing and developing scalable software solutions. My interests include modern web technologies,
+cloud architecture, distributed systems, and continuously exploring better ways to build impactful digital products.
 
 ### Frontend
 
