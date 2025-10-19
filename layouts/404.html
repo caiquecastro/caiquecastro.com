@@ -1,10 +1,13 @@
----
-layout: page
-permalink: /404.html
----
-
+{{ define "main" }}
 <h1 class="special-title">Hmm...</h1>
 
 <p class="special-text">
   Sorry, we couldn't find the page you're looking for. Please make sure the address is correct.
 </p>
+
+<p>
+  <a href="{{ "/" | relURL }}">Back to homepage</a>
+</p>
+{{ end }}
+
+
