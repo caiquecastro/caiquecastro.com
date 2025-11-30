@@ -27,9 +27,12 @@ cloud architecture, distributed systems, and continuously exploring better ways 
 
 ### Backend
 
-* Node.js (Nest.js, ExpressoTS, Koa, Express)
-* Python (FastAPI, Django, Flask)
-* PHP (Laravel, Symfony, Laminas and Wordpress)
+* Node.js ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+    - (Nest.js, ExpressoTS, Koa, Express)
+* Python ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+    - (FastAPI, Django, Flask)
+* PHP ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
+    - (Laravel, Symfony, Laminas and Wordpress)
 * Relational Databases: Postgres, MySQL, SQLServer, Oracle
 * NoSQL Databases: MongoDB, Redis, Elasticsearch
 
