@@ -8,9 +8,9 @@ language: pt-BR
 Quando desejamos conectar a um servidor remoto, como por exemplo um droplet da
 Digital Ocean, o meio mais comum e seguro é através de ssh. Exemplo:
 
-{% highlight bash %}
-  ssh user@123.45.67.89
-{% endhighlight %}
+```bash
+ssh user@123.45.67.89
+```
 
 Inicialmente quando executamos esse comando, será solicitada a senha do usuario
 para acesso ao servidor. Porém para quem realiza tarefas em servidores remotos
@@ -20,9 +20,9 @@ afetando sua produtividade.
 Para solucionar esse problema, é possível que se inclua a sua chave ssh pública
 na lista de chaves autorizadas do servidor remoto.
 
-{% highlight bash %}
-  cat ~/.ssh/id_rsa.pub | ssh user@123.45.67.89 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
-{% endhighlight %}
+```bash
+cat ~/.ssh/id_rsa.pub | ssh user@123.45.67.89 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+```
 
 Explicando o comando acima:
 
