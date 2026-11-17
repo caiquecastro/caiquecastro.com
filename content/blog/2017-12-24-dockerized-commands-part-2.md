@@ -5,7 +5,7 @@ date: 2017-12-24
 language: en
 ---
 
-On the last post ({% post_url 2017-12-16-dockerized-commands %}), we learned
+In the [previous post](/blog/2017-12-16-dockerized-commands/), we learned
 how to run npm commands dockerized. But there is a little issue with that
 command. I tried to run `yarn` with the dockerized node, but I got the
 following error:

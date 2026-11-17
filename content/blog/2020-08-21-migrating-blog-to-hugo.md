@@ -13,7 +13,7 @@ tivesse mais artigos provavelmente essa migração seria mais trabalhosa.
 Para executar localmente foi bem simples pois utilizei Docker.
 
 ```sh
-docker run --rm -it \                         
+docker run --rm -it \
   -v $(pwd):/src -p 1313:1313 \
   peaceiris/hugo serve --bind 0.0.0.0
 ```

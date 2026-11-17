@@ -15,10 +15,10 @@ resume the vagrant box download, I started getting the following error:
 After a quick search on StackOverflow, I got a solution: To remove the failed box
 download from the temporary folder on vagrant.
 
-``sh
-cd ~/.vagrant.d/tmp
-rm -rf *
-``
+```sh
+cd ~/.vagrant.d/tmp &&
+  rm -rf -- *
+```
 
 I hope this can be useful for someone. I would like to apologize if I made any
 mistake in English.
