@@ -15,8 +15,8 @@ os &lt;select&gt; do HTML.
 Permite você customizar os select boxes com suporte para busca, tokenização,
 dados remotos, scroll infinito entre outras características.
 
-Para utilizar essa biblioteca é necessário incluir os arquivos css e js na sua
-página. Que pode ser feito:
+Para usar o Select2, carregue o jQuery antes do JavaScript do plugin. Os arquivos
+CSS e JavaScript do Select2 podem ser incluídos das seguintes formas:
 
 * Download local (manualmente) (não recomendado):
 [Baixando pelo Github](https://github.com/select2/select2/releases), que no
@@ -28,10 +28,10 @@ contendo módulos adicionais) na sua página html.
 
   Exemplo:
 
-{% highlight html %}
+```html
 <link href="path/to/select2.min.css" rel="stylesheet" />
 <script src="path/to/select2.min.js"></script>
-{% endhighlight %}
+```
 
 * Utilizando CDN: A biblioteca é disponibilizada nas CDN
 [cdnjs](https://cdnjs.com/libraries/select2) e
@@ -40,19 +40,19 @@ HTML.
 
 Exemplo:
 
-{% highlight html %}
+```html
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
-{% endhighlight %}
+```
 
 * Via NPM:
 
 Select2 também é disponibilizada como um pacote [NPM](https://www.npmjs.com/).
 Para baixar Select2 como dependência NPM:
 
-{% highlight bash %}
+```bash
 npm install select2 --save
-{% endhighlight %}
+```
 
   A biblioteca será baixada para a sua pasta node_modules/select2.
 
@@ -60,9 +60,9 @@ npm install select2 --save
 
 Para baixar via [bower](http://bower.io):
 
-{% highlight bash %}
+```bash
 bower install select2 --save
-{% endhighlight %}
+```
 
 
 ## Utilização
@@ -70,25 +70,25 @@ bower install select2 --save
 Após incluir os respectivos arquivos css e js, você já pode começar a usar a
 biblioteca.
 
-{% highlight javascript %}
+```javascript
 //inicie com as opções padrões
 $('.select2').select2();
-{% endhighlight %}
+```
 
 Assim, em todo elemento que for aplicada essa classe, terá o efeito do plugin.
 
-{% highlight html %}
+```html
 <select class="select2"></select>
-{% endhighlight %}
+```
 
 Assim como em diversas outras bibliotecas, também é possivel personalizar, passando
 assim um objecto de configuração para o inicializador do plugin.
 
-{% highlight javascript %}
+```javascript
 $('.select2').select2({
   placeholder: 'Escolha seu país de nascimento'
 });
-{% endhighlight %}
+```
 
 No exemplo acima, definimos um placeholder (Aquele texto que dá uma dica ao usuário
 da página de como preencher aquele campo) para o componente.
@@ -96,37 +96,37 @@ da página de como preencher aquele campo) para o componente.
 É possível também definir outras opções, assim como tags, permitindo a inserção de
 vários valores no campo.
 
-{% highlight javascript %}
+```javascript
 $('#languages').select2({
   placeholder: 'Escolha suas linguagens favoritas',
-  tags: 'true'
+  tags: true
 });
-{% endhighlight %}
+```
 
-{% highlight html %}
-<select class="languages" multiple></select>
-{% endhighlight %}
+```html
+<select id="languages" multiple></select>
+```
 
 A opção allowClear permite com que o usuário a opção que ele selecionou ou já veio
 previamente selecionada.
 
-{% highlight javascript %}
+```javascript
 $('.select2').select2({
   placeholder: 'Escolha seu país de nascimento',
   allowClear: true
 });
-{% endhighlight %}
+```
 
 A biblioteca também carrega para o componente se for definida alguma opção no código
 HTML:
 
-{% highlight html %}
+```html
 <select class="select2">
   <option value="php" selected>PHP</option>
   <option value="c">C</option>
   <option value="java">Java</option>
 </select>
-{% endhighlight %}
+```
 
 Select2 é uma biblioteca bastante completa e repleta de funcionalidades. Para conhecer
 outras opções disponíveis, consulte a [documentação](https://select2.github.io) em inglês.
