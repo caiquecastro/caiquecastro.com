@@ -3,6 +3,9 @@ title: "Dockerized commands"
 tags: ["docker", "virtualization"]
 date: 2017-12-16
 language: en
+displayTitle: "Dockerized *commands.*"
+series: Dockerized commands
+seriesLinkTitle: Running npm in Docker
 ---
 
 Today I will share a quick tip to improve your workflow. In the last years,
@@ -14,7 +17,7 @@ development workflow and I needed to install the npm dependencies of my
 project. I hadn't installed the node and npm yet, so I decided to run
 `npm install` with docker
 
-```
+```sh
 docker run --rm -w /opt/ -v $(pwd):/opt/ node npm install
 ```
 

@@ -1,0 +1,39 @@
+{{ define "main" }}
+{{ $locale := .Params.language | default site.Language.Lang }}
+{{ $lang := lower (index (split $locale "-") 0) }}
+<article class="entry">
+  <a class="backlink" href="{{ site.Home.RelPermalink }}#archive">← Back to the notebook</a>
+  <header class="entry-head">
+    {{ $neighbor := false }}
+    {{ $direction := "" }}
+    {{ with .Params.series }}
+      {{ $parts := (where site.RegularPages "Params.series" .).ByDate }}
+      {{ range $i, $part := $parts }}
+        {{ if eq $part $ }}
+          <p class="overline"><span class="tab-mark" aria-hidden="true"></span>{{ $.Params.series }} · Part {{ printf "%02d" (add $i 1) }} of {{ printf "%02d" (len $parts) }}</p>
+          {{ if lt (add $i 1) (len $parts) }}
+            {{ $neighbor = index $parts (add $i 1) }}{{ $direction = "Next" }}
+          {{ else if gt $i 0 }}
+            {{ $neighbor = index $parts (sub $i 1) }}{{ $direction = "Previous" }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    <h1 lang="{{ $locale }}">{{ with .Params.displayTitle }}{{ . | markdownify }}{{ else }}{{ .Title }}{{ end }}</h1>
+    <p class="entry-meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time>
+      <span>{{ index hugo.Data.languages $lang | default $locale }}</span><span>{{ .ReadingTime }} min read</span>
+    </p>
+  </header>
+  <div class="reading">
+    <div class="prose" lang="{{ $locale }}">{{ .Content }}</div>
+    {{ with .GetTerms "tags" }}<ul class="topic-links" aria-label="Tags">{{ range . }}<li><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>{{ end }}</ul>{{ end }}
+    {{ with $neighbor }}
+      <a class="next-note" href="{{ .RelPermalink }}">
+        <span><small class="overline">{{ $direction }} in this series</small><strong>{{ .Title }}</strong></span>
+        <span class="arrow" aria-hidden="true">{{ if eq $direction "Next" }}→{{ else }}←{{ end }}</span>
+      </a>
+    {{ end }}
+  </div>
+</article>
+{{ end }}

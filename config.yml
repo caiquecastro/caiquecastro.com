@@ -5,23 +5,30 @@ theme: "PaperMod"
 copyright: "© 2021"
 
 params:
-  homeInfoParams:
-    Title: Hi there
-    Content: Senior Software Engineer
+  description: "Notes from my work in software engineering. Containers, command-line tools, and things I learn along the way."
+  featuredSeries:
+    title: Dockerized commands
+    description: Running everyday tools inside containers, starting with npm on a freshly formatted machine.
 
   socialIcons:
     - name: twitter
+      label: Twitter
       url: https://twitter.com/caiquecastro_
     - name: github
+      label: GitHub
       url: https://github.com/caiquecastro
     - name: gitlab
+      label: GitLab
       url: https://gitlab.com/caiquecastro
     - name: linkedin
+      label: LinkedIn
       url: https://www.linkedin.com/in/caiquecastro/
     - name: stackoverflow
+      label: Stack Overflow
       url: https://stackoverflow.com/users/2958728/caique-castro-soares-da-silva
 
-  showPageTitleInTOC: false
+  schema:
+    publisherType: Person
 
 markup:
   highlight:
@@ -34,22 +41,15 @@ markup:
 
 menu:
   main:
-    - name: "Home"
-      title: "Home page"
-      url: "/"
-      weight: 1.0
+    - name: Notebook
+      pageRef: /
+      weight: 1
     - name: About
-      title: "About page"
-      url: "/about/"
-      weight: 2.0
-    - name: "Uses"
-      title: "My setup"
-      url: "/uses/"
-      weight: 3.0
-    - name: "Blog"
-      title: "Blog index"
-      url: "/blog/"
-      weight: 4.0
+      pageRef: /about
+      weight: 2
+    - name: Uses
+      pageRef: /uses
+      weight: 3
 
 outputs:
   home:

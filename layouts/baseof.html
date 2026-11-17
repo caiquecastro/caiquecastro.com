@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="{{ site.Language.Lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ if or (not hugo.IsProduction) .Params.robotsNoIndex (eq .Kind "404") }}<meta name="robots" content="noindex, nofollow">{{ end }}
+  <title>{{ if .IsHome }}Engineering notebook{{ else }}{{ .Title }}{{ end }} · {{ site.Title }}</title>
+  <meta name="description" content="{{ or .Description (.Summary | plainify | htmlUnescape | truncate 180) site.Params.description }}">
+  <link rel="canonical" href="{{ .Params.canonicalURL | default .Permalink }}">
+  {{ range .AlternativeOutputFormats }}<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ .Name }}">{{ end }}
+  <link rel="icon" href="{{ "favicon.ico" | relURL }}">
+  <link rel="icon" sizes="32x32" type="image/png" href="{{ "favicon-32x32.png" | relURL }}">
+  <link rel="icon" sizes="16x16" type="image/png" href="{{ "favicon-16x16.png" | relURL }}">
+  <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
+  <link rel="mask-icon" href="{{ "safari-pinned-tab.svg" | relURL }}" color="#294ca3">
+  {{ with resources.Get "notebook/notebook.css" | minify | fingerprint }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
+  <script>
+    try {
+      const theme = localStorage.getItem("pref-theme");
+      document.documentElement.dataset.theme = theme === "light" || theme === "dark" ? theme :
+        (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    } catch {}
+  </script>
+  {{ with resources.Get "notebook/notebook.js" | minify | fingerprint }}<script defer src="{{ .RelPermalink }}"></script>{{ end }}
+  {{ if hugo.IsProduction }}
+    {{ partial "templates/opengraph.html" . }}
+    {{ partial "templates/twitter_cards.html" . }}
+    {{ partial "templates/schema_json.html" . }}
+  {{ end }}
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-head wrap">
+    <a class="wordmark" href="{{ site.Home.RelPermalink }}"><span class="book-mark" aria-hidden="true"></span>{{ site.Title }}</a>
+    <nav aria-label="Main navigation">
+      {{ range site.Menus.main }}
+        {{ $current := eq $.RelPermalink .URL }}
+        {{ $notebook := and (eq .Page site.Home) (or (eq $.Section "blog") (in (slice "term" "taxonomy") $.Kind)) }}
+        <a href="{{ .URL }}"{{ if or $current $notebook }} class="nav-current" aria-current="{{ if $current }}page{{ else }}location{{ end }}"{{ end }}>{{ .Name }}</a>
+      {{ end }}
+    </nav>
+  </header>
+  <main id="main" class="wrap">{{ block "main" . }}{{ end }}</main>
+  <footer class="foot wrap">
+    <span>{{ site.Title }}</span>
+    <div>
+      {{ with site.GetPage "/blog" }}<a href="{{ .RelPermalink }}">Archive</a>{{ end }}
+      {{ with site.GetPage "/tags" }}<a href="{{ .RelPermalink }}">Tags</a>{{ end }}
+      {{ range where site.Params.socialIcons "name" "github" }}<a href="{{ .url }}">GitHub ↗</a>{{ end }}
+      {{ with site.Home.OutputFormats.Get "rss" }}<a href="{{ .RelPermalink }}">RSS ↗</a>{{ end }}
+      <button type="button" id="theme-toggle" hidden>Dark mode</button>
+    </div>
+  </footer>
+</body>
+</html>

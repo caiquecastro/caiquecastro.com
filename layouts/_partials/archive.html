@@ -1,0 +1,35 @@
+<section class="archive{{ if not .home }} archive-page{{ end }}" id="archive" aria-labelledby="archive-title">
+  <div class="archive-head">
+    {{ if .home }}
+      <h2 id="archive-title">{{ .title }}<span class="count" aria-live="polite">{{ len .posts }}</span></h2>
+    {{ else }}
+      <h1 id="archive-title">{{ .title }}</h1>
+    {{ end }}
+    {{ if .home }}
+      <div class="language-filter" role="group" aria-label="Filter posts by language" hidden>
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="en" aria-pressed="false">English</button>
+        <button type="button" data-filter="pt" aria-pressed="false">Português</button>
+      </div>
+    {{ end }}
+  </div>
+  {{ range .posts.GroupByDate "2006" }}
+    <div class="archive-year">
+      {{ if $.home }}<h3 class="year">{{ .Key }}</h3>{{ else }}<h2 class="year">{{ .Key }}</h2>{{ end }}
+      <ul>
+        {{ range .Pages }}
+          {{ $locale := .Params.language | default site.Language.Lang }}
+          {{ $lang := lower (index (split $locale "-") 0) }}
+          <li data-lang="{{ $lang }}"><a href="{{ .RelPermalink }}">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02" }}</time>
+            <span class="post-name" lang="{{ $locale }}">{{ .Title }}</span>
+            <span class="lang" aria-label="{{ index hugo.Data.languages $lang | default $locale }}">{{ upper $lang }}</span>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a></li>
+        {{ end }}
+      </ul>
+    </div>
+  {{ else }}
+    <p class="empty">No entries yet.</p>
+  {{ end }}
+</section>
