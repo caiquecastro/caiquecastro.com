@@ -1,4 +1,4 @@
-baseURL: "/" # https://www.caiquecastro.com
+baseURL: "https://www.caiquecastro.com/"
 locale: "en-us"
 title: "Caique de Castro"
 theme: "PaperMod"

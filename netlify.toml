@@ -1,11 +1,13 @@
 [build]
 publish = "public"
+command = 'hugo --gc --baseURL "$DEPLOY_PRIME_URL"'
+
+[build.environment]
+HUGO_VERSION = "0.170.1"
+
+[context.production]
 command = "hugo --gc"
 
 [context.production.environment]
-HUGO_VERSION = "0.170.1"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
-
-[context.deploy-preview.environment]
-HUGO_VERSION = "0.170.1"
