@@ -1,5 +1,14 @@
 ---
 title: Uses
+displayTitle: "What I *use.*"
+byline: Hardware & software
+figure:
+  image: laptop.webp
+  caption: My workbench
+  number: "03"
+  alt: Isometric drawing of an open laptop with a terminal window
+  width: 630
+  height: 400
 ---
 
 This page contains my current setup. It's inspired on [https://uses.tech/](https://uses.tech/)

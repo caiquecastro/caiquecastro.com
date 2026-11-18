@@ -3,6 +3,8 @@ title: "Dockerized commands - Part 2"
 tags: ["docker", "virtualization"]
 date: 2017-12-24
 language: en
+series: Dockerized commands
+seriesLinkTitle: Fixing the Yarn mount
 ---
 
 In the [previous post](/blog/2017-12-16-dockerized-commands/), we learned

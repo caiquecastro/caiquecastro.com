@@ -1,0 +1,22 @@
+{{ define "main" }}
+  {{ partial "notebook-hero.html" . }}
+  {{ $posts := where site.RegularPages "Section" "blog" }}
+  {{ with site.Params.featuredSeries }}
+    {{ $series := . }}
+    {{ with (where $posts "Params.series" .title).ByDate }}
+      <section class="series" aria-labelledby="series-title">
+        <div class="series-intro">
+          <p class="overline"><span class="tab-mark" aria-hidden="true"></span>Selected series</p>
+          <h2 id="series-title"><a href="{{ (index . 0).RelPermalink }}">{{ $series.title }}</a></h2>
+          <p>{{ $series.description }}</p>
+        </div>
+        <ol class="parts">
+          {{ range $i, $part := . }}
+            <li><a href="{{ .RelPermalink }}"><span class="part-num">{{ printf "%02d" (add $i 1) }}</span><span>{{ .Params.seriesLinkTitle | default .Title }}</span><span class="arrow" aria-hidden="true">↗</span></a></li>
+          {{ end }}
+        </ol>
+      </section>
+    {{ end }}
+  {{ end }}
+  {{ partial "archive.html" (dict "posts" $posts "title" "The archive" "home" true) }}
+{{ end }}

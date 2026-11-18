@@ -1,13 +1,9 @@
 {{ define "main" }}
-<h1 class="special-title">Hmm...</h1>
-
-<p class="special-text">
-  Sorry, we couldn't find the page you're looking for. Please make sure the address is correct.
-</p>
-
-<p>
-  <a href="{{ "/" | relURL }}">Back to homepage</a>
-</p>
+<section class="entry missing-page">
+  <div class="entry-head">
+    <p class="overline"><span class="ink-line"></span>404</p>
+    <h1>Page <em>not found.</em></h1>
+  </div>
+  <p>This page couldn’t be found. <a class="backlink" href="{{ site.Home.RelPermalink }}">← Back to the notebook</a></p>
+</section>
 {{ end }}
-
-

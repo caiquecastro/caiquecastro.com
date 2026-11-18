@@ -1,0 +1,14 @@
+{{ define "main" }}
+  {{ $paginator := .Paginate .RegularPages.ByDate.Reverse }}
+  {{ $title := .Title }}
+  {{ if and .IsSection (eq .Section "blog") }}{{ $title = "Blog archive" }}{{ end }}
+  {{ if eq .Kind "term" }}<a class="backlink" href="{{ .Parent.RelPermalink }}">← All {{ .Parent.Title | lower }}</a>{{ end }}
+  {{ partial "archive.html" (dict "posts" $paginator.Pages "title" $title) }}
+  {{ if gt $paginator.TotalPages 1 }}
+  <nav class="page-nav" aria-label="Archive pages">
+    {{ with $paginator.Prev }}<a href="{{ .URL }}">← Newer entries</a>{{ end }}
+    <span>Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}</span>
+    {{ with $paginator.Next }}<a href="{{ .URL }}">Older entries →</a>{{ end }}
+  </nav>
+  {{ end }}
+{{ end }}

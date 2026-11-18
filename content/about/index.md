@@ -1,5 +1,15 @@
 ---
 title: About
+showProfiles: true
+displayTitle: "About *me.*"
+byline: Caique de Castro · Taubaté, Brazil
+figure:
+  image: cube.webp
+  caption: Rubik’s cube
+  number: "02"
+  alt: A three-by-three puzzle cube with its upper layer turned
+  width: 460
+  height: 400
 ---
 
 Hello, my name is Caique de Castro. I'm 31 and I hold a degree in Computer Engineering from the University of Taubaté
@@ -12,7 +22,7 @@ for technology and problem-solving.
 Today, I focus on designing and developing scalable software solutions. My interests include modern web technologies,
 cloud architecture, distributed systems, and continuously exploring better ways to build impactful digital products.
 
-### Frontend
+## Frontend
 
 * [HTML](http://developer.mozilla.org/en-US/docs/Web/HTML)
 * JS
@@ -25,7 +35,7 @@ cloud architecture, distributed systems, and continuously exploring better ways 
 * [Shadcn UI](https://ui.shadcn.com/)
 
 
-### Backend
+## Backend
 
 * Node.js ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
     - (Nest.js, ExpressoTS, Koa, Express)
@@ -37,7 +47,7 @@ cloud architecture, distributed systems, and continuously exploring better ways 
 * NoSQL Databases: MongoDB, Redis, Elasticsearch
 
 
-### Ops
+## Ops
 
 * Shell / Bash Scripts
 * [Docker](https://www.docker.com/)
@@ -55,14 +65,14 @@ cloud architecture, distributed systems, and continuously exploring better ways 
 * [Sentry](https://sentry.io/)
 
 
-### IOT
+## IOT
 
 * Arduino
 * RaspberryPI
 * ESP32
 
 
-### Hobies
+## Hobbies {#hobies}
 
 My hobbies are:
 

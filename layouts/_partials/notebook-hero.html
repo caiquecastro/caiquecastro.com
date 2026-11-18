@@ -1,0 +1,14 @@
+<header class="hero{{ if not .IsHome }} chapter-hero{{ end }}">
+  <div class="intro">
+    {{ with .Params.byline }}<p class="overline"><span class="ink-line"></span>{{ . }}</p>{{ end }}
+    <h1>{{ with .Params.displayTitle }}{{ . | markdownify }}{{ else }}{{ .Title }}{{ end }}</h1>
+    {{ if .IsHome }}<p class="intro-text">{{ site.Params.description }}</p>{{ end }}
+  </div>
+  {{ with .Params.figure }}
+  <figure class="workstation">
+    <div class="draft-grid" aria-hidden="true"></div>
+    <img src="{{ printf "notebook/%s" .image | relURL }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}">
+    <figcaption><span>Fig. {{ .number }}</span> &nbsp; {{ .caption }}</figcaption>
+  </figure>
+  {{ end }}
+</header>

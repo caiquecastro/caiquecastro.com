@@ -1,0 +1,22 @@
+{{ define "main" }}
+  {{ partial "notebook-hero.html" . }}
+  <div class="chapter-body">
+    {{ with .Fragments.Headings }}
+      <aside class="contents" aria-label="On this page">
+        <p class="overline">On this page</p>
+        {{ $.Fragments.ToHTML 2 2 false }}
+      </aside>
+    {{ end }}
+    <div class="chapter-reading">
+      <div class="prose">{{ .Content }}</div>
+      {{ if .Params.showProfiles }}
+        <div class="elsewhere">
+          <h2>Elsewhere</h2>
+          <ul class="topic-links">
+            {{ range site.Params.socialIcons }}<li><a href="{{ .url }}">{{ .label | default .name }} ↗</a></li>{{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

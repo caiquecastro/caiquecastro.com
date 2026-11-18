@@ -1,0 +1,10 @@
+{{ define "main" }}
+<section class="archive archive-page">
+  <header class="archive-head"><h1>{{ .Title }}</h1></header>
+  {{ with .Data.Terms.Alphabetical }}
+    <ul class="term-list">{{ range . }}<li><a href="{{ .Page.RelPermalink }}"><span>{{ .Page.LinkTitle }}</span><span class="count">{{ .Count }}</span></a></li>{{ end }}</ul>
+  {{ else }}
+    <p class="empty">No {{ .Title | lower }} yet. {{ with site.GetPage "/blog" }}<a href="{{ .RelPermalink }}">Browse the archive →</a>{{ end }}</p>
+  {{ end }}
+</section>
+{{ end }}
