@@ -50,15 +50,19 @@ for (const block of document.querySelectorAll(".prose pre")) {
 }
 
 const themeToggle = document.getElementById("theme-toggle");
-const themeRoot = document.documentElement;
+const darkStyles = document.getElementById("dark-theme");
+function darkModeActive() {
+  return window.matchMedia(darkStyles.media).matches;
+}
 function updateThemeLabel() {
-  themeToggle.textContent = themeRoot.dataset.theme === "dark" ? "Light mode" : "Dark mode";
+  themeToggle.textContent = darkModeActive() ? "Light mode" : "Dark mode";
 }
 themeToggle.hidden = false;
 updateThemeLabel();
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", updateThemeLabel);
 themeToggle.addEventListener("click", () => {
-  const theme = themeRoot.dataset.theme === "dark" ? "light" : "dark";
-  themeRoot.dataset.theme = theme;
+  const theme = darkModeActive() ? "light" : "dark";
+  darkStyles.media = theme === "dark" ? "all" : "not all";
   try { localStorage.setItem("pref-theme", theme); } catch {}
   updateThemeLabel();
 });

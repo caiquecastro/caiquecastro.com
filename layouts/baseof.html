@@ -14,11 +14,13 @@
   <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
   <link rel="mask-icon" href="{{ "safari-pinned-tab.svg" | relURL }}" color="#294ca3">
   {{ with resources.Get "notebook/notebook.css" | minify | fingerprint }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
+  {{ with resources.Get "notebook/dark.css" | minify | fingerprint }}<link id="dark-theme" rel="stylesheet" href="{{ .RelPermalink }}" media="(prefers-color-scheme: dark)">{{ end }}
   <script>
     try {
       const theme = localStorage.getItem("pref-theme");
-      document.documentElement.dataset.theme = theme === "light" || theme === "dark" ? theme :
-        (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      if (theme === "dark" || theme === "light") {
+        document.getElementById("dark-theme").media = theme === "dark" ? "all" : "not all";
+      }
     } catch {}
   </script>
   {{ with resources.Get "notebook/notebook.js" | minify | fingerprint }}<script defer src="{{ .RelPermalink }}"></script>{{ end }}
