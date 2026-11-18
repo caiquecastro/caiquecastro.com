@@ -159,12 +159,21 @@ h1 em { color: var(--blue); font-weight: 400; }
 .prose { overflow-wrap: anywhere; }
 .prose a, .empty a { color: var(--blue); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .18em; }
 .prose a:hover { text-decoration-thickness: 2px; }
-.prose .heading-link { display: inline-block; padding-inline: .3em; color: var(--muted); text-decoration: none; font: 400 .75em/1 var(--mono); }
-.heading-link::before { content: "#"; }
-@media (hover: hover) {
-  .prose .heading-link { opacity: 0; }
-  .prose :is(h1,h2,h3,h4,h5,h6):hover .heading-link, .prose .heading-link:focus { opacity: 1; }
+.prose .heading-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-inline-size: 44px;
+  min-block-size: 44px;
+  /* Let the target extend above and below the line of text. */
+  margin-block: min(0px, calc(.5em - 22px));
+  font: 400 .75em/1 var(--mono);
+  color: var(--muted);
+  text-decoration: none;
 }
+.heading-link::before { content: "#"; }
+.prose .heading-link:is(:hover, :focus-visible) { color: var(--blue); }
 .prose :is(h2,h3,h4) { line-height: 1.2; letter-spacing: -.025em; scroll-margin-top: 20px; }
 .prose h2, .elsewhere h2 { font: 400 clamp(33px, 3.2vw, 46px)/1.1 var(--serif); margin: 1em 0 .4em; }
 .prose h3 { font: 620 19px/1.35 var(--sans); margin: 1.4em 0 .4em; }
