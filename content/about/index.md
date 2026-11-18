@@ -1,5 +1,6 @@
 ---
 title: About
+description: Caique de Castro on building tools for video collection and generation, getting started with PHP, and writing software for his own restaurant.
 showProfiles: true
 displayTitle: "About *me.*"
 byline: Caique de Castro · Taubaté, Brazil
@@ -12,71 +13,20 @@ figure:
   height: 400
 ---
 
-Hello, my name is Caique de Castro. I'm 31 and I hold a degree in Computer Engineering from the University of Taubaté
-(UNITAU) and an MBA in Soluctions Architect from FIAP. Based in Taubaté, SP, Brazil, I work as a senior software engineer.
+I’m a product and applied AI engineer at Reka. I build tools that help people record and label video for AI training and get paid for their work.
 
-My journey in programming began at the age of 12, when I started building websites with HTML, CSS, JavaScript, and PHP.
-Back then, I coded in Dreamweaver and experimented with Flash animations—early experiences that sparked my passion
-for technology and problem-solving.
+## Working with video
 
-Today, I focus on designing and developing scalable software solutions. My interests include modern web technologies,
-cloud architecture, distributed systems, and continuously exploring better ways to build impactful digital products.
+I built and published a mobile app so contributors could record footage on their phones. I also built the tool they use to label media. It has handled more than 10 million annotations. Behind the scenes, I write Node.js and Python services that process the footage after upload.
 
-## Frontend
+At Moonvalley, I worked with researchers to bring their video-generation model into a product people could use. My part included refining customers’ prompts and preparing images and video before sending them to the model.
 
-* [HTML](http://developer.mozilla.org/en-US/docs/Web/HTML)
-* JS
-* CSS
-* PWA
-* [React](https://pt-br.react.dev/)
-* [Next.js](https://nextjs.org/)
-* [Vue.js 2.x/3.x](https://vuejs.org/)
-* [Tailwind CSS](https://tailwindcss.com/)
-* [Shadcn UI](https://ui.shadcn.com/)
+## How I got started
 
+At 12, I was building websites in Dreamweaver, writing PHP, and making animations in Flash. I went on to study Computer Engineering at the University of Taubaté and earned an MBA in Solutions Architecture at FIAP.
 
-## Backend
+When I owned a restaurant and B&B, I wrote the point-of-sale software we used to ring up orders.
 
-* Node.js ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-    - (Nest.js, ExpressoTS, Koa, Express)
-* Python ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-    - (FastAPI, Django, Flask)
-* PHP ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
-    - (Laravel, Symfony, Laminas and Wordpress)
-* Relational Databases: Postgres, MySQL, SQLServer, Oracle
-* NoSQL Databases: MongoDB, Redis, Elasticsearch
+## Outside work
 
-
-## Ops
-
-* Shell / Bash Scripts
-* [Docker](https://www.docker.com/)
-* [Podman](https://podman.io/)
-* [Kubernetes](https://kubernetes.io/)
-* [Nomad](https://www.nomadproject.io/)
-* [Ansible](https://www.ansible.com/)
-* [Grafana](https://grafana.com/)
-* [Amazon AWS](https://aws.amazon.com/)
-* [Google Cloud](https://cloud.google.com/)
-* [Azure](https://azure.microsoft.com/)
-* [Heroku](https://www.heroku.com/)
-* [DigitalOcean](https://www.digitalocean.com/)
-* [Datadog](https://www.datadoghq.com/)
-* [Sentry](https://sentry.io/)
-
-
-## IOT
-
-* Arduino
-* RaspberryPI
-* ESP32
-
-
-## Hobbies {#hobies}
-
-My hobbies are:
-
-* Learning new technologies
-* Playing Tennis
-* Rubik's cube
-* Watching Netflix
+I play tennis and solve Rubik’s cubes. I also build things for myself, including a pet-care app that lets me log updates offline and sync them later. [Pawprint on GitHub](https://github.com/caiquecastro/pawprint)
