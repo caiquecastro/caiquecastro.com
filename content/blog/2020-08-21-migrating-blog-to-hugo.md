@@ -1,16 +1,13 @@
 ---
-title: Migrating blog to hugo
+title: "Moving my blog to Hugo"
 tags: ["blog", "hugo", "ssg"]
 date: 2020-08-21
-language: pt
+language: en
 ---
 
-Na última semana resolvi migrar meu site pessoal para o [Hugo](https://gohugo.io/).
-Há bastante tempo vinha pensando em substituir o [Jekyll](https://jekyllrb.com/).
-O processo de migração foi simples pois possuo poucos artigos no blog. Porém se
-tivesse mais artigos provavelmente essa migração seria mais trabalhosa.
+I'd been thinking about replacing [Jekyll](https://jekyllrb.com/) for a while. Last week, I moved my personal site to [Hugo](https://gohugo.io/). I had only a few posts to move, which made the migration straightforward. A larger archive would probably have taken more work.
 
-Para executar localmente foi bem simples pois utilizei Docker.
+I used Docker to run the site locally.
 
 ```sh
 docker run --rm -it \
@@ -18,5 +15,4 @@ docker run --rm -it \
   peaceiris/hugo serve --bind 0.0.0.0
 ```
 
-O deploy é feito no [Netlify](https://www.netlify.com/) e todo o código fonte pode
-ser encontrado no repositório do meu perfil no Github.
+I deploy the site with [Netlify](https://www.netlify.com/). The full source code is in the site's repository on my GitHub profile.

@@ -6,11 +6,20 @@
       <h1 id="archive-title">{{ .title }}</h1>
     {{ end }}
     {{ if .home }}
-      <div class="language-filter" role="group" aria-label="Filter posts by language" hidden>
-        <button type="button" data-filter="all" aria-pressed="true">All</button>
-        <button type="button" data-filter="en" aria-pressed="false">English</button>
-        <button type="button" data-filter="pt" aria-pressed="false">Português</button>
-      </div>
+      {{ $languages := slice }}
+      {{ range .posts }}
+        {{ $locale := .Params.language | default site.Language.Lang }}
+        {{ $lang := lower (index (split $locale "-") 0) }}
+        {{ $languages = union $languages (slice $lang) }}
+      {{ end }}
+      {{ if gt (len $languages) 1 }}
+        <div class="language-filter" role="group" aria-label="Filter posts by language" hidden>
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          {{ range sort $languages }}
+            <button type="button" data-filter="{{ . }}" aria-pressed="false">{{ index hugo.Data.languages . | default . }}</button>
+          {{ end }}
+        </div>
+      {{ end }}
     {{ end }}
   </div>
   {{ range .posts.GroupByDate "2006" }}

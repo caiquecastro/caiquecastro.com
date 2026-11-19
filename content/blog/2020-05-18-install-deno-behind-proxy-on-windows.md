@@ -1,21 +1,18 @@
 ---
-title: "Instalando deno com proxy no Windows"
+title: "Installing Deno behind a proxy on Windows"
 tags: ["deno", "proxy", "windows"]
 date: 2020-05-18
-language: pt
+language: en
 ---
 
-Na última semana foi lançado o novo runtime de javascript e typescript, o Deno.
+Deno, a new runtime for JavaScript and TypeScript, came out last week. On Windows, you can install it from PowerShell.
 
-Para instalar no Windows, execute o seguinte comando:
-
-```
+```powershell
 iwr https://deno.land/x/install/install.ps1 -useb | iex
 ```
 
-Porém se você está em uma rede corporativa com proxy, provavelmente não conseguirá executar esse comando.
-Portanto é necessário instruir o comando Invoke-WebRequest para usar as configurações de proxy.
+On a corporate network, a proxy can prevent that command from downloading the installer. To send the request through the proxy, pass its address and port to `Invoke-WebRequest` (`iwr`). The `-ProxyUseDefaultCredentials` switch tells PowerShell to use your current credentials for the proxy.
 
-```
-iwr -Proxy http://endereco-do-proxy:porta -ProxyUseDefaultCredentials https://deno.land/x/install/install.ps1 -useb | iex
+```powershell
+iwr -Proxy http://proxy-address:port -ProxyUseDefaultCredentials https://deno.land/x/install/install.ps1 -useb | iex
 ```
