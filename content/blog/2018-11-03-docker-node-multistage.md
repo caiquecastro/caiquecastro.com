@@ -14,6 +14,8 @@ node                             11-alpine           4b3c025f5508        21 hour
 
 The default image includes Python, which some dependencies need at build time. I used the default image to install the dependencies and the Alpine image to run the app.
 
+Use this example for apps with pure JavaScript dependencies. The default image uses glibc, and Alpine uses musl. A native addon compiled in the default image can fail to load on Alpine. If your app uses native addons, build them in a matching Alpine stage with Python, Make, and a C++ compiler.
+
 ```
 FROM node:11 as builder
 
