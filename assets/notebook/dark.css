@@ -1,0 +1,15 @@
+:root {
+  color-scheme: dark;
+  --paper: #1e272a;
+  --ink: #f2f0e8;
+  --muted: #bdc6c1;
+  --blue: #a1baff;
+  --rule: #44504f;
+  --panel: #283432;
+  --panel-rule: #56635e;
+  --prose: #e2e5df;
+  --inline: #344241;
+  --selected: #43524a;
+}
+.draft-grid { opacity: .3; }
+::selection { background: #455e86; }

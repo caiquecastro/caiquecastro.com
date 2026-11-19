@@ -8,8 +8,9 @@
     {{ if .home }}
       <div class="language-filter" role="group" aria-label="Filter posts by language" hidden>
         <button type="button" data-filter="all" aria-pressed="true">All</button>
-        <button type="button" data-filter="en" aria-pressed="false">English</button>
-        <button type="button" data-filter="pt" aria-pressed="false">Português</button>
+        {{ range $code, $label := hugo.Data.languages }}
+          <button type="button" data-filter="{{ $code }}" aria-pressed="false">{{ $label }}</button>
+        {{ end }}
       </div>
     {{ end }}
   </div>
