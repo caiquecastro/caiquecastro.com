@@ -5,17 +5,29 @@ date: 2020-05-18
 language: en
 ---
 
-Deno 1.0 came out last week. On Windows, you can install the runtime from PowerShell with the [official installer](https://docs.deno.com/runtime/getting_started/installation/).
+Deno 1.0, a runtime for JavaScript and TypeScript, came out last week. At the time, this was the PowerShell command for installing it on Windows.
 
 ```powershell
-irm https://deno.land/install.ps1 | iex
+iwr https://deno.land/x/install/install.ps1 -useb | iex
 ```
 
-Behind a corporate proxy, two programs need the proxy address. PowerShell fetches the installer, which calls `curl.exe` to fetch Deno. In a new PowerShell session, replace the example address below with your proxy's address and port. The `-Proxy` argument routes the first request, and `HTTPS_PROXY` routes curl's requests for the rest of the session.
+On a corporate network, a proxy could prevent PowerShell from downloading the installer. To send the request through the proxy, you could pass its address and port to `Invoke-WebRequest` (`iwr`). In the original example below, `endereco-do-proxy:porta` stands for the proxy host and port.
 
 ```powershell
-$env:HTTPS_PROXY = 'http://proxy.example.com:8080'
-Invoke-RestMethod -Proxy $env:HTTPS_PROXY -Uri https://deno.land/install.ps1 | Invoke-Expression
+iwr -Proxy http://endereco-do-proxy:porta -ProxyUseDefaultCredentials https://deno.land/x/install/install.ps1 -useb | iex
 ```
 
-If your proxy requires Windows credentials, PowerShell's `-ProxyUseDefaultCredentials` applies only to its own request. In that case, you can download the Windows ZIP from [Deno's releases](https://github.com/denoland/deno/releases) in your authenticated browser. Extract `deno.exe`, add its folder to your user `Path`, and run `deno --version` in a new PowerShell session.
+> **Compatibility note.** The Windows installer has moved to `https://deno.land/install.ps1`. For a direct connection, use the current PowerShell command. [Deno installation guide](https://docs.deno.com/runtime/getting_started/installation/)
+>
+> ```powershell
+> irm https://deno.land/install.ps1 | iex
+> ```
+>
+> Behind a proxy, replace `proxy.example.com:8080` with your proxy's host and port. PowerShell uses `-Proxy` to fetch the installer. The installer then calls `curl.exe` to download Deno, and curl reads `HTTPS_PROXY` from the same session.
+>
+> ```powershell
+> $env:HTTPS_PROXY = 'http://proxy.example.com:8080'
+> Invoke-RestMethod -Proxy $env:HTTPS_PROXY -Uri https://deno.land/install.ps1 | Invoke-Expression
+> ```
+>
+> If your proxy requires Windows credentials, `-ProxyUseDefaultCredentials` applies only to the PowerShell request. You can instead use an authenticated browser to download the Windows ZIP for your architecture. Extract `deno.exe`, add its folder to your user `Path`, and run `deno --version` in a new PowerShell session. [Deno releases](https://github.com/denoland/deno/releases)
