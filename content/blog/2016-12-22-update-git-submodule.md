@@ -1,17 +1,16 @@
 ---
-title: "Updating git submodule"
+title: "Updating Git submodules"
 tags: ["git", "submodule", "update"]
 date: 2016-12-22
 language: en
 ---
 
-Today, after 8 months of inactivity, I'm writing a new blog post. Today I'm going to share a quick but very useful command snippet.
-If you have git project with submodules, from time to time, you may need to update the submodule's repository to the latest commit.
+It's been eight months since my last post. Today I want to share a command I use to pull changes into several Git submodules at once.
 
 ```sh
 git submodule foreach git pull origin master
 ```
 
-It will visit every submodule on your project and update them to the master branch's lastest commit.
+`foreach` runs the pull in each checked-out, top-level submodule, using the `master` branch on that submodule's `origin`. If a pull fails, Git stops there. Earlier pulls stay in place, and later submodules keep their previous commits.
 
-I hope this tip is useful for you. See you soon!
+I hope this tip helps. See you soon!

@@ -8,23 +8,14 @@ series: Dockerized commands
 seriesLinkTitle: Running npm in Docker
 ---
 
-Today I will share a quick tip to improve your workflow. In the last years,
-the docker has gained so much popularity. As a trend, some people tend to
-run the applications in docker containers instead of on the host machine.
+As Docker has grown in popularity, more developers have started running applications in containers. I found that approach handy for command-line tools, too.
 
-After formatting my computer, I hadn't installed all the tools I use on my
-development workflow and I needed to install the npm dependencies of my
-project. I hadn't installed the node and npm yet, so I decided to run
-`npm install` with docker
+After reformatting my computer, I needed to install my project's dependencies. I hadn't reinstalled Node.js or npm yet, so I ran `npm install` in Docker.
 
 ```sh
 docker run --rm -w /opt/ -v $(pwd):/opt/ node npm install
 ```
 
-The command above starts a container with a node image, the --rm flag means
-that the container should be removed after it finishes running, with the -w
-flag I set the working directory inside the container, and with -v, I set the
-volume between the host and the container and with the `npm install` I run
-the command inside the running container.
+The `-v` flag mounts my current directory at `/opt/` inside the container, and `-w` sets that directory as the working directory. Docker starts the container from the `node` image and runs `npm install` there. The `--rm` flag removes the container when the command finishes.
 
-I hope this tip is usefull for you. If you like it, leave a comment here.
+I hope this tip helps. If you try it, let me know how it goes.

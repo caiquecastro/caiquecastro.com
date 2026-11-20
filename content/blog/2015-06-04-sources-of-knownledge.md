@@ -1,12 +1,12 @@
 ---
-title: "My Sources of Knownledge"
+title: "My Sources of Knowledge"
 tags: ["source", "knowledge", "docs"]
 date: 2015-06-04
 language: en
 ---
 
-Hey guys, today I'm going to write about my sources of knownledge. I like to read many articles related to development daily. I follow many blogs and I'm subscribed in many newsletters and I also follow interesting profiles in Twitter.
+Hey, everyone! Today I want to share a few of the places I go to learn about software development. I read articles every day, subscribe to newsletters, and follow developers on their blogs and on Twitter.
 
-[DevDocs](http://devdocs.io) is a website that combine at the moment I'm writing this post more than fifty API docs. It has a nice interface, the docs are very organized, and the search box helps us to find a specific documentation.
+As I write this, [DevDocs](http://devdocs.io) brings together documentation for more than fifty APIs. I like the interface. The docs are well organized, and the search box helps me find the entry I need.
 
-Although DevDocs offers PHP Documentation, I still look for some things in [PHP.net](http://php.net/), when it comes to my favorite programming language.
+PHP is my favorite programming language. Although DevDocs includes its documentation, I still look things up on [PHP.net](http://php.net/).

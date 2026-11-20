@@ -1,64 +1,62 @@
 ---
-title: "Quick tips I - Terminal"
+title: "Quick terminal tips, part I"
 date: 2016-04-22
 tags: [quick-tips, terminal, workflow]
 language: en
 ---
 
-Hello everyone, I'm back to share with you some quick tips for terminal that helps
-a lot in our today workflow on the terminal. If you, like the most developers use
-the terminal for every two tasks on the computer, it will probably come in handy.
+Hello, everyone! If you spend as much time in the terminal as I do, these three shortcuts might come in handy.
 
-1. **Sometimes you need the create a new directory and immediately cd into it:**
+## 1. Create a directory and switch to it
+
+In this example, `$_` expands to the last argument of `mkdir`, so I only have to type the directory name once.
 
 ```sh
 mkdir caique && cd $_
 ```
 
-2. **Sometime you enter a command but it requires sudo permission:**
+## 2. Run the previous command with sudo
+
+Sometimes I open my hosts file in Vim and only realize I need elevated privileges when I try to save it.
 
 ```sh
 vim /etc/hosts
 ```
 
-If you try to save a change to your hosts file:
-
+After I quit Vim, I can recall the previous command at the shell prompt with `!!` and run it with `sudo`.
 
 ```sh
 sudo !!
 ```
 
-After you enter this command, it will appear on your shell:
+The shell expands that shortcut to the following command.
 
 ```sh
 sudo vim /etc/hosts
 ```
 
-Press enter again to confirm the comand. Now you can make the changes to your file.
+If your shell shows the expanded command for confirmation, press Enter. You can then edit and save the file.
 
-3. **Chainning commands:**
+## 3. Chain commands
 
-If you need to only enter a command after the previous one finishes, you can:
+A semicolon runs the second command after the first one finishes, even if the first command fails.
 
 ```sh
 sudo apt-get update; sudo apt-get upgrade
 ```
 
-Otherwise if you want only the second command to be executed if the first one succeed:
+Use `&&` to run the second command only if the first succeeds. Here, the program runs only if it compiles successfully.
 
 ```sh
 g++ fibonacci.cpp -o fibonacci.x && ./fibonacci.x
 ```
 
-Likewise you can execute a command only if the previous had failed:
+Use `||` to run the second command only if the first fails.
 
 ```sh
 ./check-server-health.sh || ./up-server.x
 ```
 
-But be careful, ``||`` is different than ``|``. The first one is the OR condition, the
-last one is the pipe. That enters the output from the first command to the input of
-the other one.
+A single `|` is a pipe. It sends the output of the first command to the input of the second.
 
-If it was helpful to you, please give you feedback. If you find any mistake, please let
-me know.
+If these tips helped you, I'd love to hear your feedback. If you spot a mistake, please let me know.

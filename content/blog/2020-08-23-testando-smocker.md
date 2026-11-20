@@ -1,20 +1,13 @@
 ---
-title: Testando Smocker
-tags: ["smocker", "mock", "microserviços", "docker"]
+title: "Trying out Smocker"
+tags: ["smocker", "mock", "microservices", "docker"]
 date: 2020-08-23
-language: pt
+language: en
 ---
 
-No post de hoje irei demonstrar uma ferramenta interessante que descobri
-nas minhas leituras diárias de newsletters. Como ele se descreve, é um
-servidor de mock HTTP simples e eficiente. O objetivo 
+I came across [Smocker](https://smocker.dev/) in one of the newsletters I read each day. It's a lightweight HTTP mock server with a backend written in Go and a web interface built with React and TypeScript. You can find the source on [GitHub](https://github.com/Thiht/smocker).
 
-Trata-se do [Smocker](https://smocker.dev/), que você pode conferir o projeto
-no Github: [Thiht/smocker](https://github.com/Thiht/smocker).
-
-Seu backend é escrito em Go e seu front-end é feito com React com Typescript.
-
-Para instalá-lo no meu computador, eu utilizei Docker
+I used Docker to run Smocker on my machine.
 
 ```sh
 docker run -d \
@@ -25,7 +18,6 @@ docker run -d \
     thiht/smocker
 ```
 
-Ele abre duas portas com o host, a 8080 que é a porta do servidor em si, e que
-você usará nos seus testes e a 8081 que é a UI.
+The container exposes two ports on the host. Point your tests at port `8080` to reach the mock server. To open the web interface shown below, use port `8081` in your browser.
 
-![Smocker UI](/images/smocker-screenshot.png)
+![Smocker web interface](/images/smocker-screenshot.png)
