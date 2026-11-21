@@ -11,3 +11,4 @@ command = "hugo --gc"
 [context.production.environment]
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
+HUGO_GOATCOUNTER_ENDPOINT = "https://caique.goatcounter.com/count"

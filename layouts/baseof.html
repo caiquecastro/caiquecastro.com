@@ -53,5 +53,10 @@
       <button type="button" id="theme-toggle" hidden>Dark mode</button>
     </div>
   </footer>
+  {{ if hugo.IsProduction }}
+    {{ with os.Getenv "HUGO_GOATCOUNTER_ENDPOINT" }}
+      <script async src="https://gc.zgo.at/count.js" data-goatcounter="{{ . }}"></script>
+    {{ end }}
+  {{ end }}
 </body>
 </html>
