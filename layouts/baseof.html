@@ -23,7 +23,9 @@
       }
     } catch {}
   </script>
-  {{ with resources.Get "notebook/notebook.js" | minify | fingerprint }}<script defer src="{{ .RelPermalink }}"></script>{{ end }}
+  {{ with resources.Get "notebook/notebook.js" | minify | fingerprint }}
+    <script defer src="{{ .RelPermalink }}"{{ with site.Home.OutputFormats.Get "json" }} data-search-index="{{ .RelPermalink }}"{{ end }}></script>
+  {{ end }}
   {{ if hugo.IsProduction }}
     {{ partial "templates/opengraph.html" . }}
     {{ partial "templates/twitter_cards.html" . }}
